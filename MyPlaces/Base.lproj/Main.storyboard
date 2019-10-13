@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="15S-8M-bHl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="15S-8M-bHl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -68,6 +68,7 @@
                                     <outlet property="locationLabel" destination="uu1-3D-MR0" id="jOS-IC-X3G"/>
                                     <outlet property="nameLabel" destination="ssl-vm-Mh3" id="k5G-ex-Ew3"/>
                                     <outlet property="typeLabel" destination="fYK-oR-oUJ" id="DE3-pG-r0i"/>
+                                    <segue destination="ymz-Ak-nlo" kind="show" identifier="showDetail" id="A0t-Ob-hDF"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -257,14 +258,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pGW-2g-klG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="6Yd-WX-EZo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1840.5797101449277" y="75.669642857142847"/>
+            <point key="canvasLocation" x="1207" y="86"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hed-sI-exn">
             <objects>
                 <navigationController id="15S-8M-bHl" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xcI-Bq-pNc">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="xcI-Bq-pNc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="24"/>
@@ -294,10 +295,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yRd-Mi-5Q9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1144.9275362318842" y="75.669642857142847"/>
+            <point key="canvasLocation" x="1206" y="-657"/>
         </scene>
     </scenes>
     <resources>
         <image name="addPhoto" width="50" height="50"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="uUe-PL-CA6"/>
+    </inferredMetricsTieBreakers>
 </document>
