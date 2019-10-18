@@ -73,7 +73,7 @@ class NewPlaceViewController: UITableViewController {
         let newPlace = Place(name: placeName.text!, location: placeLocation.text, type: placeType.text, imageData: imageData)
         
         if currentPlace != nil {
-            try! realm .write {
+            try! realm.write {
                 currentPlace?.name = newPlace.name
                 currentPlace?.location = newPlace.location
                 currentPlace?.type = newPlace.type
