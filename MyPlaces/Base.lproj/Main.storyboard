@@ -259,6 +259,9 @@
                                     <segment title="Date"/>
                                     <segment title="Name"/>
                                 </segments>
+                                <connections>
+                                    <action selector="sortSelection:" destination="AY5-nz-M2L" eventType="valueChanged" id="QBg-7g-usF"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -271,7 +274,11 @@
                         <viewLayoutGuide key="safeArea" id="fVj-X0-xAC"/>
                     </view>
                     <navigationItem key="navigationItem" title="My Places" largeTitleDisplayMode="never" id="3vC-hz-exV">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="arrow.up.arrow.down" catalog="system" id="oRa-QD-bIE"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="arrow.up.arrow.down" catalog="system" id="oRa-QD-bIE">
+                            <connections>
+                                <action selector="reversedSorting:" destination="AY5-nz-M2L" id="olw-Bu-vYc"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="V7H-di-Ifz">
                             <connections>
                                 <segue destination="QZV-bb-lfx" kind="presentation" id="yQO-iW-Q9C"/>
@@ -279,6 +286,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="segmentedControl" destination="SB8-Kh-JO4" id="Pgn-GV-LOW"/>
+                        <outlet property="sortingButton" destination="oRa-QD-bIE" id="3iG-tD-JQr"/>
                         <outlet property="tableView" destination="n3l-mE-Wvb" id="27i-4g-Tox"/>
                     </connections>
                 </viewController>
