@@ -279,14 +279,27 @@
                                     <action selector="centerViewInUserLocation" destination="Vt4-7Y-ur5" eventType="touchUpInside" id="oJo-W4-W5l"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4p-fq-SP3">
+                                <rect key="frame" x="182" y="782" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Ios-KV-bC2"/>
+                                    <constraint firstAttribute="height" constant="50" id="USe-Xw-v3i"/>
+                                </constraints>
+                                <state key="normal" image="GetDirection"/>
+                                <connections>
+                                    <action selector="goButtonPressed" destination="Vt4-7Y-ur5" eventType="touchUpInside" id="kFM-mb-fzS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="e4p-fq-SP3" firstAttribute="centerX" secondItem="Vtw-C7-xMh" secondAttribute="centerX" id="3br-F1-kUe"/>
                             <constraint firstItem="UXv-wy-cov" firstAttribute="bottom" secondItem="dpE-ZR-OOl" secondAttribute="bottom" constant="152" id="45b-cY-RfC"/>
                             <constraint firstItem="UXv-wy-cov" firstAttribute="bottom" secondItem="Nmx-LC-Zsq" secondAttribute="bottom" constant="30" id="4Kx-oR-BGe"/>
                             <constraint firstItem="UXv-wy-cov" firstAttribute="trailing" secondItem="kHb-wN-tCb" secondAttribute="trailing" constant="40" id="4sj-b7-lPE"/>
                             <constraint firstItem="4jm-CO-FLl" firstAttribute="top" secondItem="Vtw-C7-xMh" secondAttribute="top" id="7Oa-47-bMg"/>
                             <constraint firstAttribute="bottom" secondItem="4jm-CO-FLl" secondAttribute="bottom" id="I2P-si-v7F"/>
+                            <constraint firstItem="UXv-wy-cov" firstAttribute="bottom" secondItem="e4p-fq-SP3" secondAttribute="bottom" constant="30" id="MVc-QP-uRG"/>
                             <constraint firstItem="UXv-wy-cov" firstAttribute="trailing" secondItem="zls-ev-XF7" secondAttribute="trailing" constant="20" id="Nq8-MY-7Rj"/>
                             <constraint firstItem="zls-ev-XF7" firstAttribute="leading" secondItem="UXv-wy-cov" secondAttribute="leading" constant="20" id="Vey-3f-33q"/>
                             <constraint firstItem="Zzc-ts-qkE" firstAttribute="centerX" secondItem="Vtw-C7-xMh" secondAttribute="centerX" id="fe4-oW-ONU"/>
@@ -303,6 +316,7 @@
                     <connections>
                         <outlet property="addressLabel" destination="zls-ev-XF7" id="pMg-P3-E4J"/>
                         <outlet property="doneButton" destination="Nmx-LC-Zsq" id="Gro-AQ-eZh"/>
+                        <outlet property="goButton" destination="e4p-fq-SP3" id="BRF-NP-thP"/>
                         <outlet property="mapPinImage" destination="Zzc-ts-qkE" id="dIQ-HZ-OQr"/>
                         <outlet property="mapView" destination="4jm-CO-FLl" id="s63-KF-lab"/>
                     </connections>
@@ -488,6 +502,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="GetDirection" width="48" height="48"/>
         <image name="Location" width="48" height="48"/>
         <image name="Pin" width="50" height="50"/>
         <image name="Placeholder" width="50" height="50"/>
