@@ -123,7 +123,7 @@
                                                     </constraints>
                                                     <state key="normal" image="Placeholder"/>
                                                     <connections>
-                                                        <segue destination="Vt4-7Y-ur5" kind="presentation" identifier="getAdress" modalPresentationStyle="fullScreen" id="iJ1-Vu-Hvn"/>
+                                                        <segue destination="Vt4-7Y-ur5" kind="presentation" identifier="getAddress" modalPresentationStyle="fullScreen" id="iJ1-Vu-Hvn"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -301,7 +301,7 @@
                         <viewLayoutGuide key="safeArea" id="UXv-wy-cov"/>
                     </view>
                     <connections>
-                        <outlet property="adressLabel" destination="zls-ev-XF7" id="pMg-P3-E4J"/>
+                        <outlet property="addressLabel" destination="zls-ev-XF7" id="pMg-P3-E4J"/>
                         <outlet property="doneButton" destination="Nmx-LC-Zsq" id="Gro-AQ-eZh"/>
                         <outlet property="mapPinImage" destination="Zzc-ts-qkE" id="dIQ-HZ-OQr"/>
                         <outlet property="mapView" destination="4jm-CO-FLl" id="s63-KF-lab"/>
